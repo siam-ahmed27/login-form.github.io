@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: url(../images/bg-01.jpg);
+  background-size: cover;
+}
+
+.wrapper {
+  background-color: #fff;
+  width: 500px;
+  border: none;
+  padding: 65px 55px 54px 55px;
+  border-radius: 10px;
+  min-width: 450px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.281);
+}
+
+.wrapper h1 {
+  font-weight: bold;
+  color: #333;
+  font-size: 39px;
+  padding-bottom: 49px;
+  text-align: center;
+}
+
+.wrapper .input_text {
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.wrapper .input_text label{
+  display: block;
+  color: #333333;
+  font-size: 15px;
+  padding-left: 4px;
+  font-weight: 500;
+  margin-bottom: 2px;
+}
+
+.wrapper .input_text input {
+  width: 100%;
+  border: none;
+  outline: none;
+  border-radius: 7px;
+  padding-left: 7px;
+  padding-right: 45px;
+  height: 40px;
+  border: 1px solid #ddd;
+  /* position: relative; */
+  font-size: 14px;
+}
+
+.input_text input::placeholder {
+  color: #666666;
+}
+
+.input_text i {
+  position: absolute;
+  font-size: 25px;
+  right: 7px;
+  top: 49.5%;
+  /* transform: translateY(-10%); */
+  color: #5c5c5c;
+  border-left: 1px solid #ddd;
+  padding-left: 4px;
+}
+
+.wrapper .forgot{
+text-decoration: none;
+text-align: right;
+margin-top: -10px;
+margin-bottom: 31px;
+}
+
+.wrapper .forgot a{
+  text-decoration: none;
+  color: #666666;
+  font-size: 14px;
+  transition: 0.5s;
+  font-weight: 400;
+  
+}
+
+.wrapper .forgot a:hover {
+  color: rgb(180, 38, 223);
+}
+
+.btn {
+  position: relative;
+  display: inline-flex;
+  height: 50px;
+  width: 100%;
+  overflow: hidden;
+  transition: all .4s;
+  border-radius: 40px;
+  box-shadow: 0 0 5px rgba(7, 7, 7, 0.479);
+}
+
+.btn .inner {
+  position: absolute;
+  width: 300%;
+  height: 100%;
+  left: -100%;
+  z-index: 1;
+  transition: all .4s;
+}
+
+.btn button{
+  height: 100%;
+  width: 100%;
+  border: none;
+  outline: none;
+  background: none;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  z-index: 1;
+  font-weight: 500;
+}
+
+.btn:hover{
+  transform: scale(1.03);
+}
+.btn:hover .inner{
+  left: 0;
+}
+
+.btn1 .inner{
+  background: -webkit-linear-gradient(right, #00dbde,#fc00ff,#00dbde,#fc00ff);
+  /* background: -webkit-linear-gradient(right, #43cea2,#185a9d,#43cea2,#185a9d); */
+}
+
